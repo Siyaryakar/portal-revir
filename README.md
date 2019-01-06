@@ -5,11 +5,11 @@ Kurulum
 1-) Portal içerisindeki composer.json dosyasında repositories bölümüne modülün linkini eklemek.
     {
         "type": "vcs",
-        "url": "https://github.com/bedirhancinar/portal-odev.git"
+        "url": "https://github.com/siyaryakar/portal-revir.git"
     },
 2-) Portal klasörünün içerisindeki portal/backend/config/main.php , portal/frontend/config/main.php , portal/api/config/main.php dosyalarındaki modules bölümüne kendi modülünüzü eklemeniz gerekmektedir.
     'odev' => [
-        'class' => 'kouosl\odev\Module',
+        'class' => 'kouosl\portal-revir\Module',
     ],
     3-) Composer.json a eklediğimiz repoyu sistemimize eklemek için vagrant ssh yaptıktan sonra cd /var/www/portal dizininde composer update veya composer require kouosl/portal-odev:dev-master komutunu çalıştırınız.
     
